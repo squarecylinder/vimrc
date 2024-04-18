@@ -24,7 +24,11 @@ colorscheme dracula
 let mapleader = " "
 
 nnoremap <leader>pv :Vex<CR>
-nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+if has('win64')
+    nnoremap <leader><CR> :so ~/AppData/Local/nvim/init.vim<CR>
+else
+    nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+endif
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>pf :Files<CR>
 nnoremap <C-j> :cnext<CR>
