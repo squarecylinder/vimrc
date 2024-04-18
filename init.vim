@@ -25,4 +25,12 @@ nnoremap <leader>pv :Vex<CR>
 nnoremap <leader><CR> :so ~/AppData/Local/nvim/init.vim<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>pf :Files<CR>
-
+nnoremap <C-j> :cnext<CR>
+nnoremap <C-k> :cprev<CR>
+nnoremap <C-e> :copen<CR>
+nnoremap <A-Down> :m+<CR>==
+nnoremap <A-Up> :m-2<CR>==
+inoremap <A-Down> <Esc>:m+<CR>==gi
+inoremap <A-Up> <Esc>:m-2<CR>==gi
+vnoremap <A-Down> :m'>+<CR>gv=gv
+vnoremap <A-Up> :m-2<CR>gv=gv
