@@ -40,5 +40,6 @@ nnoremap <A-Up> :m-2<CR>==
 inoremap <A-Down> <Esc>:m+<CR>==gi
 inoremap <A-Up> <Esc>:m-2<CR>==gi
 inoremap <expr> <C-space> coc#pum#visible() ? coc#_select_confirm() : coc#refresh() 
+inoremap <expr> <S-tab> coc#pum#visible() ? coc#_select_confirm() : coc#refresh() 
 vnoremap <A-Down> :m'>+<CR>gv=gv
 vnoremap <A-Up> :m-2<CR>gv=gv
