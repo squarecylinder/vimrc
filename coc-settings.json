@@ -1,5 +1,0 @@
-{
-    "elixir.pathToElixirLS": "~/elixir-ls-0.20.0/release/language_server.bat",
-    "diagnostic.virtualText": true,
-    "diagnostic.virtualTextCurrentLineOnly": false
-}
